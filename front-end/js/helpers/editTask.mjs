@@ -4,8 +4,6 @@ import { fetchData } from "./fetchData.mjs"
 
 export function editTask(taskName,taskId){
     return new Promise((resolve) => {
-        console.log(taskName.length)
-        console.log(taskId)
 
         if(taskName.length === 0){
             return resolve({Message:"veuilllez remplir la tache"})
